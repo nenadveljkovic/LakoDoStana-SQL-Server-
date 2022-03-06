@@ -1,0 +1,13 @@
+Koraci za kreiranje baze podataka:
+
+1. Pokrenuti NuGet Package Manager Consolu u okviru Visual Studia
+	(Tools -> NuGet Package Manager -> Package Manager Console)
+2.Ukoliko već postoji migracija pokrenuti sledeću komandu
+	1)Update-Database
+Ukoliko migracija ne postoji pokrenuti sledeći nz naredbiČ
+	1)Add-Migration (ime migracije)
+	2)Update-Database
+(Napomena: Ukoliko dodje do greške prilikom kreiranja baze a migracija već postoji obrisati postojeću i kreirati novu!)
+3.Kada se baza podataka kreira pronaći je na SQL Serveru i kreirati upit
+	(Desni klik -> New Query...)
+4.Iskopirati sadržaj Fajla TestPodaci.txt i pokrenuti upit klikom na zelenu strelicu
